@@ -1,0 +1,81 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gotham {
+  font-family: "Gotham", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  line-height: 1.5;
+}
+
+.avenir {
+  font-family: "AvenirMedium", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.white {
+  color: black;
+}
+
+.blue {
+  color: #0022ff;
+}
+
+/* ---- QUOTE ---- */
+@media (max-width: 720px) {
+  .quote-wrapper {
+    margin-top: 10%;
+  }
+}
+
+.quote-content {
+  text-align: center;
+  position: relative;
+}
+
+.quote-img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 27px;
+  left: 42%;
+  padding: 0 3%;
+}
+
+.svg-quote {
+  fill: #0022ff;
+}
+
+.quote-name {
+  margin-top: 0.6em;
+  text-align: center;
+}
+
+.quote-copy {
+  margin-top: -2%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  /* This aligns the items vertically in the center */
+}
+
+/* Other CSS rules remain the same */
+
+.quote-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  /* Add some margin to create space between the image and the text */
+}
+
+.quote-copy {
+  margin: 0;
+  /* You might want to remove the top margin now that they are in a row */
+}

@@ -1,0 +1,198 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	font-family: sans-serif;
+}
+
+.alternate-bg {
+	min-height: 100vh;
+	background-color: #e9f0f8;
+}
+
+.branches-section {
+	width: 85vw;
+	margin: 0 auto;
+}
+
+.fade-in {
+	width: min-content;
+	height: fit-content;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+
+.cardContainer {
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
+
+.hoverItemContainer {
+	overflow: hidden;
+	margin: 1em !important;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.30), 0 20px 15px rgba(0, 0, 0, 0.22);
+	cursor: default;
+	transition: .25s ease;
+	transform: translateZ(0);
+}
+
+.hoverItemContainer:hover {
+	transform: translateY(-10px) scale(1.05);
+	/* Increase the scale and move the element up slightly */
+	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.30), 0 20px 15px rgba(0, 0, 0, 0.22);
+	/* Adjust the box shadow as desired */
+	z-index: 10000px;
+}
+
+.hoverItemContainer:hover .hoverItemReadMore {
+	margin-top: 5px !important;
+	background: #0022ff;
+	color: white;
+	transform: 1;
+}
+
+.hoverItemContentWrapper {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	z-index: 10;
+}
+
+.hoverItemContainer:hover {
+	transform: 1.1;
+}
+
+.hoverItemContentImage {
+	width: 100%;
+}
+
+.hoverItemContentInfo {
+	padding: 10px;
+	margin: 0 !important;
+	height: 25px;
+	display: grid;
+	flex-direction: row;
+	justify-content: start;
+	margin-top: -5px;
+	padding-left: .5em;
+	align-items: center;
+	font-size: .75em;
+	color: white;
+}
+
+.hoverItemContentTags {
+	border-radius: 25% 0;
+	background: #0022ff;
+	padding: .5em 1em;
+	margin-right: 15px;
+	color: white;
+	cursor: pointer;
+}
+
+.hoverItemContentTitle {
+	margin: 0 !important;
+	display: flex;
+	justify-items: left;
+	justify-content: left;
+	padding: .25em;
+	box-sizing: border-box;
+	font-size: 13px;
+}
+
+.hoverItemContentTitleText {
+	color: black;
+	font-size: 1.2em;
+	align-items: left;
+}
+
+.hoverItemReadMore {
+	background: transparent;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto !important;
+	margin-top: -50px !important;
+	display: flex;
+	flex-direction: row;
+	padding: .5em 2em;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: .25s ease;
+	color: transparent;
+	outline: none;
+	text-decoration: none;
+}
+
+.hoverItemReadMore img {
+	width: 1.2em;
+	padding: 0.2em;
+	background: #647de4;
+	border: 0.1em solid #fff;
+	border-radius: 50%;
+	transition: .25s ease;
+}
+
+.hoverItemReadMore img:hover {
+	box-shadow: 0 0 10px #6577ea;
+	transition: .25s ease;
+}
+
+.section-description {
+	text-align: left;
+	max-width: 70%;
+	margin: auto;
+	padding-top: 70px;
+
+}
+
+.section-title {
+	padding: 3vh 0;
+	color: #02f;
+	font-family: Cairo, sans-serif;
+	font-size: 42px;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+.card {
+	height: 300px;
+	background: #3357c5;
+}
+
+.card h3 {
+	text-align: center;
+}
+
+.slick-slider {
+	display: grid;
+	grid-column: 50px;
+}
+
+.slick-list {
+	height: fit-content;
+	margin: 1em !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-size: 0.15em !important;
+	color: rgb(45, 69, 229) !important;
+}
+
+.slick-prev, .slick-next {
+	font-size: 15em !important;
+}
+
+.slick-dots li button::before {
+	color: rgb(96, 117, 253) !important;
+	font-size: 1rem !important;
+	top: 2rem !important;
+}
+
+.slick-dots li.slick-active button::before {
+	color: rgb(49, 76, 248) !important;
+}
